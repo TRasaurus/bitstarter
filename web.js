@@ -3,7 +3,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('href="https://github.com/TRasaurus/bitstarter/index.html"');
+  response.send("href='https://github.com/TRasaurus/bitstarter/index.html'");
 });
 
 var port = process.env.PORT || 5000;
